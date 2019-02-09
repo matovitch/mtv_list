@@ -1,0 +1,9 @@
+[submodule "dep/mtv_pool"]
+	path = dep/mtv_pool
+	url = https://github.com/matovitch/mtv_pool
+[submodule "dep/mtv_env"]
+	path = dep/mtv_env
+	url = https://github.com/matovitch/mtv_env
+[submodule "dep/doctest"]
+	path = dep/doctest
+	url = https://github.com/onqtam/doctest
