@@ -29,7 +29,7 @@ template <class Traits>
 class TIterator
 {
     template <class>
-    friend class ::TTailList;
+    friend class mtv::TList;
 
     using Cell = typename Traits::Cell;
     using Type = typename Traits::Type;

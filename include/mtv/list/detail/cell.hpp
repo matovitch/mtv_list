@@ -19,7 +19,7 @@ template <class Type>
 class TCell
 {
     template <class>
-    friend class ::TTailList;
+    friend class mtv::TList;
 
     template <class>
     friend class TIterator;

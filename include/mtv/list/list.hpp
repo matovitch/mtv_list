@@ -74,16 +74,16 @@ struct TTraits
 {
     using Type = TraitsType;
     
-    using Cell = TCell<Type>;
+    using Cell = detail::TCell<Type>;
     
     using CellPool = pool::TMake<Cell, SIZE>;
 
-    using       iterator = iterator       ::TMake<Type>;
-    using const_iterator = const_iterator ::TMake<Type>;
+    using       iterator = detail::iterator       ::TMake<Type>;
+    using const_iterator = detail::const_iterator ::TMake<Type>;
 };
 
 template <class Type, std::size_t SIZE>
-using TMake = TTailList<TTraits<Type, SIZE>>;
+using TMake = TList<TTraits<Type, SIZE>>;
 
 } // namespace list
 
